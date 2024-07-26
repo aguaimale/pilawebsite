@@ -30,7 +30,7 @@ import slider from '@/components/hero section/components/slider.vue';
    flex-direction: column;
    justify-content: center;
    align-items: flex-start;
-   padding: 24px;
+   padding: 64px;
 }
 h2 {
    color: black;
@@ -45,6 +45,24 @@ p {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   width: 100%;
+   width: 90%;
+}
+@media (max-width: 600px) {
+   .callto {
+      padding: 12px;
+   }
+   h2 {
+      font-size: 1.5rem;
+   }
+   p {
+      color: black;
+      font-size: 0.8rem;
+   }
+   .text-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+   }
 }
 </style>

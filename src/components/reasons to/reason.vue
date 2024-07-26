@@ -7,7 +7,7 @@
          <h2>RAZONES PARA TRABAJAR CON NOSOTROS</h2>
       </div>
       <div class="flex flex-column sm:flex-row w-full gap-2">
-         <div class="flex sm:flex-row gap-2 w-full">
+         <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div>
                   <h3 class="mt-4">
@@ -55,7 +55,7 @@
                </div>
             </div>
          </div>
-         <div class="flex sm:flex-row gap-2 w-full">
+         <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div>
                   <h3 class="mt-4">

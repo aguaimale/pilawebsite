@@ -15,7 +15,7 @@
                   </span>
                   <h3>Web Design</h3>
                </div>
-               <div class="flex flex-row align-items-center gap-2">
+               <div id="ocultar" class="flex flex-row align-items-center gap-2">
                   <span class="span-circulo">
                      <i class="pi pi-arrow-up-right" style="color: white"></i>
                   </span>

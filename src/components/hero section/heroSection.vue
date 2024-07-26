@@ -55,7 +55,7 @@
 
 <style scoped>
 .card {
-   height: 32rem;
+   height: 42rem;
 }
 .card-uno {
    width: 70%;

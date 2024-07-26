@@ -1,7 +1,7 @@
 <template>
    <div class="formulario">
       <div class="flex flex-column gap-2">
-         <label for="username">NOMBRE</label>
+         <label for="username">Nombre</label>
          <InputText
             id="username"
             placeholder="Ingresa tu nombre"
@@ -10,7 +10,7 @@
          />
       </div>
       <div class="flex flex-column gap-2">
-         <label for="email">EMAIL</label>
+         <label for="email">Email</label>
          <InputText
             id="email"
             placeholder="Ingresa tu correo"
@@ -19,7 +19,7 @@
          />
       </div>
       <div class="flex flex-column gap-2">
-         <label for="tupregunta">TU CONSULTA</label>
+         <label for="tupregunta">Consulta</label>
          <Textarea
             id="textarea"
             placeholder="Ingresa tu consulta..."
@@ -28,7 +28,7 @@
             cols="30"
          />
       </div>
-      <Button severity="primary">Enviar Consulta</Button>
+      <Button severity="primary">Enviar mensaje</Button>
    </div>
 </template>
 <script setup></script>

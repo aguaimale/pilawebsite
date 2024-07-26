@@ -42,6 +42,7 @@ h2 {
    display: flex;
    justify-content: center;
    align-items: center;
+   border: 2px solid #1a1a1a;
 }
 .card-dos {
    width: 30%;
@@ -105,6 +106,8 @@ p {
 @media (max-width: 600px) {
    .card-uno {
       width: 100%;
+      height: fit-content;
+      border: 2px solid #1a1a1a;
    }
    .card-dos {
       width: 100%;
@@ -114,6 +117,11 @@ p {
    }
    .herocard-mas {
       width: 100%;
+   }
+
+   h2 {
+      font-size: 1rem;
+      font-weight: 700;
    }
 }
 </style>

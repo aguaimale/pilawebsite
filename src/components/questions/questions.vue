@@ -103,6 +103,7 @@ p {
    width: 100%;
    padding-left: 16px;
 }
+
 @media (max-width: 600px) {
    .card-uno {
       width: 100%;
@@ -120,8 +121,11 @@ p {
    }
 
    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+   h3 {
       font-size: 1rem;
-      font-weight: 700;
    }
 }
 </style>

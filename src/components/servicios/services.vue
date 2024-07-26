@@ -178,6 +178,11 @@ i {
    color: aquamarine;
    font-size: 1.5rem;
 }
+h3 {
+   font-size: 1.5rem;
+   margin: 8px;
+   font-weight: 500;
+}
 @media (max-width: 600px) {
    .card {
       height: 300px;
@@ -189,8 +194,9 @@ i {
       font-weight: 700;
    }
    h3 {
-      font-size: 13px;
+      font-size: 1rem;
    }
+
    p {
       color: #b3b3b2;
       font-size: 0.8rem;

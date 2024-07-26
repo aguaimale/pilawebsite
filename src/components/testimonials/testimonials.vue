@@ -10,15 +10,12 @@
          <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Innovación en Cada Proyecto.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Pila garantiza que cada proyecto esté marcado por la
+                     innovación y soluciones efectivas, asegurando un futuro
+                     prometedor.
                   </p>
                </div>
 
@@ -33,23 +30,20 @@
                         shape="circle"
                      />
                      <div class="flex flex-row gap-3">
-                        <b><p>Sharon Orsborne</p></b>
-                        <p>CEO of BlueBloom</p>
+                        <b><p>Mariana Lopez</p></b>
+                        <p>COO of FutureTech</p>
                      </div>
                   </div>
                </div>
             </div>
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Soluciones Personalizadas.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Con Pila, cada solución es personalizada, asegurando que se
+                     adapte perfectamente a las necesidades de nuestros
+                     clientes.
                   </p>
                </div>
 
@@ -69,8 +63,8 @@
                            shape="circle"
                         />
                         <div class="flex flex-row gap-3">
-                           <b><p>Sharon Orsborne</p></b>
-                           <p>CEO of BlueBloom</p>
+                           <b><p>Javier Gómez</p></b>
+                           <p>CTO of Innovatech</p>
                         </div>
                      </div>
                   </div>
@@ -80,15 +74,12 @@
          <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Tecnología de Calidad.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Pila nos ha proporcionado tecnologías de alta calidad,
+                     permitiéndonos mantenernos a la vanguardia en nuestro
+                     sector.
                   </p>
                </div>
 
@@ -108,8 +99,8 @@
                            shape="circle"
                         />
                         <div class="flex flex-row gap-3">
-                           <b><p>Sharon Orsborne</p></b>
-                           <p>CEO of BlueBloom</p>
+                           <b><p>Luisa Fernández</p></b>
+                           <p>Smart Solutions</p>
                         </div>
                      </div>
                   </div>
@@ -117,15 +108,11 @@
             </div>
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Resultados Garantizados.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Trabajar con Pila ha sido una garantía de éxito, gracias a
+                     su enfoque en soluciones tecnológicas avanzadas.
                   </p>
                </div>
 
@@ -145,8 +132,8 @@
                            shape="circle"
                         />
                         <div class="flex flex-row gap-3">
-                           <b><p>Sharon Orsborne</p></b>
-                           <p>CEO of BlueBloom</p>
+                           <b><p>Carlos Martínez</p></b>
+                           <p>PM at TechWave</p>
                         </div>
                      </div>
                   </div>
@@ -175,8 +162,9 @@ h2 {
    font-weight: 700;
 }
 h3 {
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    margin: 8px;
+   font-weight: 500;
 }
 p {
    color: #b3b3b2;
@@ -212,15 +200,15 @@ i {
       padding: 10px;
    }
    h2 {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       font-weight: 600;
    }
    h3 {
-      font-size: 14px;
+      font-size: 1rem;
    }
    p {
       color: #b3b3b2;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
    }
    .circle-arrow {
       width: 30px;

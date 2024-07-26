@@ -1,7 +1,10 @@
 <template>
    <div class="flex flex-column flex sm:flex-row gap-2 h-auto">
-      <div class="card card-uno"></div>
-      <div class="card card-dos"></div>
+      <div class="card card-uno">
+         <div class="slider">
+            <slider />
+         </div>
+      </div>
    </div>
    <div>
       <div
@@ -51,16 +54,19 @@
    </div>
 </template>
 
-<script setup></script>
+<script setup>
+import slider from './components/slider.vue';
+</script>
 
 <style scoped>
 .card {
    height: 42rem;
 }
 .card-uno {
-   width: 70%;
+   width: 100%;
    background-color: #1a1a1a;
    border-radius: 8px;
+   padding: 24px;
 }
 .card-dos {
    width: 30%;

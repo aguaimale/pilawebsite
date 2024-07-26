@@ -33,15 +33,12 @@
             </div>
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Adaptabilidad Excepcional.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Pila se adapta rápidamente a los cambios del mercado,
+                     asegurando que tus proyectos se mantengan relevantes y
+                     competitivos.
                   </p>
                </div>
 
@@ -58,15 +55,12 @@
          <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Equipo Experto.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Un equipo altamente cualificado y apasionado trabaja en
+                     cada proyecto, aportando una riqueza de conocimientos y
+                     habilidades.
                   </p>
                </div>
 
@@ -81,15 +75,11 @@
             </div>
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Innovación Constante.</h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Pila siempre busca nuevas formas de mejorar y evolucionar,
+                     asegurando que estés siempre un paso adelante.
                   </p>
                </div>
 
@@ -125,8 +115,9 @@ h2 {
    font-weight: 700;
 }
 h3 {
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    margin: 8px;
+   font-weight: 500;
 }
 p {
    color: #b3b3b2;
@@ -166,11 +157,11 @@ i {
       font-weight: 600;
    }
    h3 {
-      font-size: 14px;
+      font-size: 1rem;
    }
    p {
       color: #b3b3b2;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
    }
    .circle-arrow {
       width: 30px;

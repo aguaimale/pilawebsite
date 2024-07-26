@@ -154,9 +154,12 @@
          <div class="flex flex-column sm:flex-column w-full gap-2">
             <div class="card-newsletter">
                <div>
-                  <p>Newsletter</p>
+                  <h3>Únete a Nuestro Equipo</h3>
                   <div>
-                     <h3>Subscribite a nuestro Newsletter</h3>
+                     <p>
+                        Estamos buscando personas talentosas para unirse a
+                        nuestro equipo. Ingresa tu correo y envíanos tu CV.
+                     </p>
                      <div class="flex flex-column gap-2">
                         <InputText
                            id="newsletter"
@@ -165,6 +168,7 @@
                            size="large"
                         />
                      </div>
+                     <upload />
                   </div>
                </div>
             </div>
@@ -183,7 +187,9 @@
    </div>
 </template>
 
-<script setup></script>
+<script setup>
+import upload from './components/upload.vue';
+</script>
 <style scoped>
 .card {
    height: 400px;
@@ -251,6 +257,11 @@ i {
 }
 p {
    color: #b3b3b2;
+}
+h3 {
+   font-size: 1.5rem;
+   margin: 8px;
+   font-weight: 500;
 }
 @media (max-width: 600px) {
    .card {

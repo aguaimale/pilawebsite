@@ -155,7 +155,9 @@
                         <h3>Tecnologías utilizadas</h3>
                      </div>
                   </div>
-                  <div class="flex flex-wrap gap-4">
+                  <div
+                     class="flex flex-wrap justify-content-center align-items-center gap-3"
+                  >
                      <div class="pill">
                         <p>React</p>
                      </div>
@@ -315,6 +317,11 @@ p {
    height: 100%;
    border-radius: 2px;
 }
+h3 {
+   font-size: 1.5rem;
+   margin: 8px;
+   font-weight: 500;
+}
 @media (max-width: 600px) {
    .card {
       height: 300px;
@@ -329,10 +336,10 @@ p {
       font-weight: 600;
    }
    h3 {
-      font-size: 0.8rem;
+      font-size: 1rem;
    }
    .card-img {
-      height: 200px;
+      height: 250px;
       width: 100%;
       border-radius: 4px;
       background-color: #1a1a1a;
@@ -349,7 +356,7 @@ p {
       justify-content: space-between;
    }
    .frameworks {
-      height: 230px;
+      height: 200px;
       width: 100%;
       background-color: #1a1a1a;
       border-radius: 4px;
@@ -392,7 +399,7 @@ p {
    }
    p {
       color: #b3b3b2;
-      font-size: 12px;
+      font-size: 0.8rem;
    }
    .pill {
       display: flex;

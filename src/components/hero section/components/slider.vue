@@ -65,7 +65,7 @@ const services = ref([
    border-radius: 8px;
    padding: 8px;
    overflow: hidden;
-   margin-top: 12px;
+   margin-top: 6px;
 }
 .slider {
    display: flex;

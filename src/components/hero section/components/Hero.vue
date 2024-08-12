@@ -1,5 +1,5 @@
 <template>
-   <div class="mb-6">
+   <div class="mt-">
       <h1>
          Create,<br />
          build and inspired.
@@ -18,22 +18,31 @@
       </div>
    </div>
 </template>
+
 <script setup></script>
+
 <style scoped>
 h1 {
    font-size: 9rem;
    margin: 0px;
+   color: #33333300;
+   position: relative;
+   overflow: hidden;
+   background: linear-gradient(45deg, #65dcbf, #ffffff, #6b4fbc, #00ff66);
+   background-size: 400% 400%;
+   transition: background-position 5s ease;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
-p {
-   color: #949494;
+
+h1:hover {
+   background-position: 100% 0;
 }
+
 @media (max-width: 600px) {
    h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
       margin: 0px;
-   }
-   p {
-      font-size: 0.9rem;
    }
 }
 </style>

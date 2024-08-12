@@ -10,10 +10,7 @@
          <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div>
-                  <h3 class="mt-4">
-                     Uso de Tecnologías de <br />
-                     Vanguardia.
-                  </h3>
+                  <h3 class="mt-4">Tecnologías de Vanguardia.</h3>
                   <br />
                   <p>
                      Pila asegura que tus proyectos estén impulsados por
@@ -136,7 +133,7 @@ i {
    margin-right: 8px;
 }
 .card {
-   height: 400px;
+   height: 300px;
    width: 100%;
    border-radius: 4px;
    background-color: #1a1a1a;

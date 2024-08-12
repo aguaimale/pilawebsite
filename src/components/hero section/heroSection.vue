@@ -1,77 +1,36 @@
 <template>
-   <div class="flex flex-column flex sm:flex-row gap-2 h-auto">
-      <div class="card card-uno gap-5">
+   <div class="flex flex-column flex sm:flex-row h-auto">
+      <div class="card card-uno">
          <div>
             <Hero />
-         </div>
-         <div class="slider">
-            <slider />
          </div>
       </div>
    </div>
    <div>
-      <div
-         class="flex flex-column flex sm:flex-row justify-content-between align-items-center h-auto mt-3 p-3 gap-2"
-         style="border: 2px solid #1f1f1f; border-radius: 8px"
-      >
-         <div class="flex sm:flex-row gap-2 w-full">
-            <div class="herocard">
-               <p>Clientes</p>
-               <h4 class="stats">200+</h4>
-            </div>
-
-            <div class="herocard">
-               <p>Proyectos</p>
-               <h4 class="stats">280+</h4>
-            </div>
-         </div>
-
-         <div class="flex sm:flex-row gap-2 w-full">
-            <div class="herocard">
-               <p>Clientes felices</p>
-               <h4 class="stats">100%</h4>
-            </div>
-
-            <div class="herocard">
-               <p>Seguidores</p>
-               <h4 class="stats">100k</h4>
-            </div>
-         </div>
-         <div class="flex flex-column flex sm:flex-row gap-2 w-full">
-            <div class="herocard">
-               <p>Años de experiencia</p>
-               <h4 class="stats">20+</h4>
-            </div>
-
-            <div class="herocard-mas">
-               <span class="circle-arrow"
-                  ><i
-                     class="pi pi-arrow-up-right"
-                     style="font-size: 1.5rem; color: #1f1f1f"
-                  ></i
-               ></span>
-               <p class="m-0">Conoce más</p>
-            </div>
-         </div>
-      </div>
+      <slider />
+   </div>
+   <div>
+      <metricas />
    </div>
 </template>
 
 <script setup>
 import slider from './components/slider.vue';
 import Hero from './components/Hero.vue';
+import metricas from './components/metricas.vue';
 </script>
 
 <style scoped>
 .card {
-   height: 42rem;
+   height: 39rem;
 }
 .card-uno {
    width: 100%;
    background-color: #1a1a1a;
    border-radius: 8px;
    padding: 24px;
-   justify-content: space-between;
+   display: flex;
+   align-items: center;
 }
 
 .card-dos {

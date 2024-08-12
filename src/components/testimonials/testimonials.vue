@@ -183,7 +183,7 @@ i {
    margin-right: 8px;
 }
 .card {
-   height: 400px;
+   height: 300px;
    width: 100%;
    border-radius: 4px;
    background-color: #1a1a1a;

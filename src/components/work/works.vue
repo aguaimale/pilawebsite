@@ -16,15 +16,6 @@
                      </span>
                      <h3>Platform Evo</h3>
                   </div>
-                  <div class="flex flex-row align-items-center gap-2">
-                     <span class="span-circulo">
-                        <i
-                           class="pi pi-arrow-up-right"
-                           style="color: white"
-                        ></i>
-                     </span>
-                     <p>Información</p>
-                  </div>
                </div>
                <div class="pill">
                   <p>Categoría</p>
@@ -116,15 +107,6 @@
                         <i class="pi pi-graduation-cap"></i>
                      </span>
                      <h3>Agrow</h3>
-                  </div>
-                  <div class="flex flex-row align-items-center gap-2">
-                     <span class="span-circulo">
-                        <i
-                           class="pi pi-arrow-up-right"
-                           style="color: white"
-                        ></i>
-                     </span>
-                     <p>Más Información</p>
                   </div>
                </div>
                <div class="pill">

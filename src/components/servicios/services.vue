@@ -15,12 +15,6 @@
                   </span>
                   <h3>Web Design</h3>
                </div>
-               <div id="ocultar" class="flex flex-row align-items-center gap-2">
-                  <span class="span-circulo">
-                     <i class="pi pi-arrow-up-right" style="color: white"></i>
-                  </span>
-                  <p>Más Información</p>
-               </div>
             </div>
             <div>
                <p>
@@ -43,12 +37,6 @@
                      <i class="pi pi-mobile"></i>
                   </span>
                   <h3>Mobile App Development</h3>
-               </div>
-               <div class="flex flex-row align-items-center gap-2">
-                  <span class="span-circulo">
-                     <i class="pi pi-arrow-up-right" style="color: white"></i>
-                  </span>
-                  <p>Más Información</p>
                </div>
             </div>
             <div>
@@ -73,12 +61,6 @@
                   </span>
                   <h3>Web Development</h3>
                </div>
-               <div class="flex flex-row align-items-center gap-2">
-                  <span class="span-circulo">
-                     <i class="pi pi-arrow-up-right" style="color: white"></i>
-                  </span>
-                  <p>Más Información</p>
-               </div>
             </div>
             <div>
                <p>
@@ -99,12 +81,6 @@
                      <i class="pi pi-graduation-cap"></i>
                   </span>
                   <h3>Consultoría Tecnológica</h3>
-               </div>
-               <div class="flex flex-row align-items-center gap-2">
-                  <span class="span-circulo">
-                     <i class="pi pi-arrow-up-right" style="color: white"></i>
-                  </span>
-                  <p>Más Información</p>
                </div>
             </div>
             <div>

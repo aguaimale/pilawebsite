@@ -1,6 +1,9 @@
 <template>
    <div class="flex flex-column flex sm:flex-row gap-2 h-auto">
-      <div class="card card-uno">
+      <div class="card card-uno gap-5">
+         <div>
+            <Hero />
+         </div>
          <div class="slider">
             <slider />
          </div>
@@ -56,6 +59,7 @@
 
 <script setup>
 import slider from './components/slider.vue';
+import Hero from './components/Hero.vue';
 </script>
 
 <style scoped>
@@ -67,7 +71,9 @@ import slider from './components/slider.vue';
    background-color: #1a1a1a;
    border-radius: 8px;
    padding: 24px;
+   justify-content: space-between;
 }
+
 .card-dos {
    width: 30%;
    background-color: #1a1a1a;

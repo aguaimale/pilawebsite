@@ -3,7 +3,11 @@
       <div class="service-slot">
          <div class="slider">
             <ul class="horizontal-list">
-               <li v-for="(service, index) in services" :key="index">
+               <!-- Duplicar la lista de servicios -->
+               <li
+                  v-for="(service, index) in [...services, ...services]"
+                  :key="index"
+               >
                   <span class="bullet"> • </span> {{ service }}
                </li>
             </ul>
@@ -16,36 +20,6 @@
 import { ref } from 'vue';
 
 const services = ref([
-   'Web Design',
-   'Mobile App Development',
-   'Web Development',
-   'E-commerce Solutions',
-   'Digital Marketing',
-   'SEO Optimization',
-   'Content Management Systems',
-   'UI/UX Design',
-   'Cloud Services',
-   'IT Consulting',
-   'Web Design',
-   'Mobile App Development',
-   'Web Development',
-   'E-commerce Solutions',
-   'Digital Marketing',
-   'SEO Optimization',
-   'Content Management Systems',
-   'UI/UX Design',
-   'Cloud Services',
-   'IT Consulting',
-   'Web Design',
-   'Mobile App Development',
-   'Web Development',
-   'E-commerce Solutions',
-   'Digital Marketing',
-   'SEO Optimization',
-   'Content Management Systems',
-   'UI/UX Design',
-   'Cloud Services',
-   'IT Consulting',
    'Web Design',
    'Mobile App Development',
    'Web Development',
@@ -76,7 +50,8 @@ const services = ref([
    list-style: none;
    padding: 0;
    margin: 0;
-   animation: slide 240s linear infinite;
+   animation: slide 60s linear infinite;
+   /* Ajustar la duración de la animación según el contenido */
 }
 .horizontal-list li {
    margin-right: 30px;
@@ -84,10 +59,10 @@ const services = ref([
 }
 @keyframes slide {
    0% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
    }
    100% {
-      transform: translateX(100%);
+      transform: translateX(0%);
    }
 }
 .bullet {

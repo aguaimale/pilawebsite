@@ -263,7 +263,7 @@ h3 {
    margin: 8px;
    font-weight: 500;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .card {
       height: 220px;
       width: 100%;
@@ -315,7 +315,7 @@ h3 {
       justify-content: space-between;
    }
    .card-newsletter {
-      height: 200px;
+      height: 240px;
    }
    .card-footer {
       height: 100px;

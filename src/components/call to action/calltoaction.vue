@@ -47,7 +47,7 @@ p {
    justify-content: space-between;
    width: 90%;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .callto {
       padding: 12px;
    }

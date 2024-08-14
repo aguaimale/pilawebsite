@@ -24,6 +24,7 @@ import metricas from './components/metricas.vue';
 .card {
    height: 39rem;
 }
+
 .card-uno {
    width: 100%;
    background-color: #1a1a1a;
@@ -31,6 +32,11 @@ import metricas from './components/metricas.vue';
    padding: 24px;
    display: flex;
    align-items: center;
+   background-image: url('./assets/imagensvgwebpila.svg');
+   background-size: contain;
+   background-blend-mode: color-dodge;
+   background-repeat: no-repeat;
+   background-position: right 5px;
 }
 
 .card-dos {
@@ -78,14 +84,17 @@ import metricas from './components/metricas.vue';
    margin-bottom: 8px;
 }
 p {
-   font-weight: 500;
-   font-size: 0.8rem;
    margin: 0;
    margin-top: 8px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .card-uno {
       width: 100%;
+      background-image: url('./assets/imagensvgwebpila.svg');
+      background-size: cover;
+      background-blend-mode: color-dodge;
+      background-repeat: no-repeat;
+      background-position: left;
    }
    .card-dos {
       width: 100%;

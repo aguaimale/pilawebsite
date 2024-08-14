@@ -304,7 +304,7 @@ h3 {
    margin: 8px;
    font-weight: 500;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .card {
       height: 300px;
       width: 100%;

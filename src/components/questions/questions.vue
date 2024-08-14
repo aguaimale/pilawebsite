@@ -104,7 +104,7 @@ p {
    padding-left: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .card-uno {
       width: 100%;
       height: fit-content;

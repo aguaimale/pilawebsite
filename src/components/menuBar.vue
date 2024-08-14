@@ -1,12 +1,19 @@
 <template>
    <div>
-      <Menubar class="" style="background-color: #1a1a1a">
+      <Menubar class="navbar">
          <template #start>
             <img src="../assets/brand.png" alt="brand" class="logo" />
-         </template>
-         <template #end>
             <div class="menu-items">
-               <Menubar :model="items" />
+               <Menubar
+                  :model="items"
+                  :pt="{
+                     rootList: {
+                        style: {
+                           width: 'fit-content',
+                        },
+                     },
+                  }"
+               />
             </div>
          </template>
       </Menubar>
@@ -19,24 +26,24 @@ import Menubar from 'primevue/menubar';
 
 const items = ref([
    { label: 'Home' },
-   { label: 'Features' },
-   {
-      label: 'Projects',
-      items: [
-         { label: 'Components' },
-         { label: 'Blocks' },
-         { label: 'UI Kit' },
-         {
-            label: 'Templates',
-            items: [{ label: 'Apollo' }, { label: 'Ultima' }],
-         },
-      ],
-   },
-   { label: 'Contact' },
+   { label: 'Sobre nosotros' },
+   { label: 'Servicios' },
+   { label: 'Proyectos' },
+   { label: 'Contacto' },
 ]);
 </script>
 
 <style scoped>
+.navbar {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   background-color: #1a1a1a;
+   z-index: 1002;
+   border-radius: 0px;
+}
+
 .logo {
    height: 50px;
 }

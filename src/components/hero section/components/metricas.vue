@@ -146,7 +146,7 @@ p {
    margin-top: 8px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .card-uno {
       width: 100%;
    }

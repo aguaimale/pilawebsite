@@ -1,11 +1,16 @@
 <template>
-   <div class="formulario">
+   <form
+      class="formulario"
+      action="../components/procesar_contacto.php"
+      method="post"
+   >
       <div class="flex flex-column gap-2">
          <label for="username">Nombre</label>
          <InputText
             id="username"
+            name="nombre"
             placeholder="Ingresa tu nombre"
-            v-model="value"
+            v-model="nombre"
             size="large"
          />
       </div>
@@ -13,8 +18,9 @@
          <label for="email">Email</label>
          <InputText
             id="email"
+            name="email"
             placeholder="Ingresa tu correo"
-            v-model="value"
+            v-model="email"
             size="large"
          />
       </div>
@@ -22,16 +28,25 @@
          <label for="tupregunta">Consulta</label>
          <Textarea
             id="textarea"
+            name="consulta"
             placeholder="Ingresa tu consulta..."
-            v-model="value"
+            v-model="consulta"
             rows="5"
             cols="30"
          />
       </div>
-      <Button severity="primary">Enviar mensaje</Button>
-   </div>
+      <Button type="submit" severity="primary">Enviar mensaje</Button>
+   </form>
 </template>
-<script setup></script>
+
+<script setup>
+import { ref } from 'vue';
+
+const nombre = ref('');
+const email = ref('');
+const consulta = ref('');
+</script>
+
 <style scoped>
 .formulario {
    padding: 18px;

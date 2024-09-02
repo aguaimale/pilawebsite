@@ -1,6 +1,6 @@
 <template>
    <div>
-      <h1>Create, <br />build and inspired.</h1>
+      <h1>Create, <br />build and inspire.</h1>
       <div>
          <p class="mb-5">
             En Pila IT, sabemos que las soluciones digitales pueden transformar

@@ -1,16 +1,17 @@
 <template>
    <div class="flex flex-row justify-content-start mt-3">
       <Toast />
-      <FileUpload
-         mode="basic"
-         name="demo[]"
-         url="/api/upload"
-         accept="image/*"
-         :maxFileSize="1000000"
-         @upload="onUpload"
-         :auto="true"
-         chooseLabel="Cargar CV"
-      />
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+         <FileUpload
+            mode="basic"
+            name="archivo[]"
+            accept=".pdf"
+            :maxFileSize="1000000"
+            @upload="onUpload"
+            :auto="true"
+            chooseLabel="Cargar CV"
+         />
+      </form>
    </div>
 </template>
 

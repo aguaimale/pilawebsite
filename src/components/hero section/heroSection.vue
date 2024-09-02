@@ -22,7 +22,7 @@ import metricas from './components/metricas.vue';
 
 <style scoped>
 .card {
-   height: 39rem;
+   height: 36rem;
 }
 
 .card-uno {

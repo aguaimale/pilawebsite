@@ -1,9 +1,5 @@
 <template>
-   <form
-      class="formulario"
-      action="../components/procesar_contacto.php"
-      method="post"
-   >
+   <form class="formulario" action="procesar_contacto_red.php" method="post">
       <div class="flex flex-column gap-2">
          <label for="username">Nombre</label>
          <InputText

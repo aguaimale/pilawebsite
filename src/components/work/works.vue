@@ -2,13 +2,14 @@
    <div class="header mt-3">
       <h2>NUESTROS PROYECTOS</h2>
    </div>
+   <!-- platform -->
    <div
       class="flex flex-column flex sm:flex-column justify-content-between align-items-center h-auto mt-3 p-3 gap-2"
       style="border: 2px solid #1f1f1f; border-radius: 8px"
    >
       <div class="flex flex-column sm:flex-column w-full gap-2">
-         <div class="flex flex-column sm:flex-row gap-2 w-full">
-            <div class="card">
+         <div id="warp" class="flex flex-column sm:flex-row gap-2 w-full">
+            <div class="card" style="gap: 10px">
                <div class="flex flex-row w-full justify-content-between">
                   <div class="flex flex-row align-items-center gap-2">
                      <span class="span-cuadrado">
@@ -17,22 +18,34 @@
                      <h3>Platform Evo</h3>
                   </div>
                </div>
-               <div class="pill">
-                  <p>Categoría</p>
-                  <span>Web Development</span>
-               </div>
                <div>
-                  <p>
-                     Nuestro multicotizador de seguros multicompañía permite a
-                     terceros ofrecer a sus clientes finales las mejores
-                     opciones de cobertura disponibles en el mercado..
+                  <br />
+                  <div>
+                     <Chip
+                        :style="{
+                           backgroundColor: '#27272a',
+                        }"
+                        label="Categoria: Web Development "
+                     />
+                  </div>
+                  <br />
+                  <p class="text-justify">
+                     Platform Evo es un avanzado cotizador de seguros
+                     multicompañía, diseñado para que intermediarios ofrezcan a
+                     sus clientes las mejores coberturas del mercado de forma
+                     rápida y precisa. Su tecnología conecta directamente con
+                     las principales aseguradoras, ofreciendo una plataforma
+                     dinámica que simplifica la gestión, acelera el proceso de
+                     selección de pólizas y proporciona una experiencia fluida,
+                     adaptable y confiable tanto para los operadores como para
+                     los usuarios finales.
                   </p>
                </div>
             </div>
             <div class="card-img">
                <img
                   class="img-soft"
-                  src="./assets/Group 83.jpg"
+                  src="./assets/Group 83.jpeg"
                   alt="platform"
                   width="100%"
                />
@@ -40,92 +53,78 @@
             <div class="card-end">
                <div class="frameworks">
                   <div class="flex flex-row w-full justify-content-between">
-                     <div class="flex flex-row align-items-center gap-2 mb-3">
-                        <h3>Tecnologías utilizadas</h3>
-                     </div>
-                  </div>
-                  <div class="flex flex-wrap gap-4">
-                     <div class="pill">
-                        <p>React</p>
-                     </div>
-                     <div class="pill">
-                        <p>Redux</p>
-                     </div>
-                     <div class="pill">
-                        <p>Rest API</p>
-                     </div>
-                     <div class="pill">
-                        <p>javascript</p>
-                     </div>
+                     <div
+                        class="flex flex-row align-items-center gap-2 mb-3"
+                     ></div>
+                     <TecnologiasUtilizadas />
                   </div>
                </div>
+
                <div class="frameworks-dos">
-                  <h3>Team Members</h3>
+                  <h3>Team</h3>
                   <div class="flex flex-row">
-                     <AvatarGroup>
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png"
-                           size="medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png"
-                           size="medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png"
-                           size="medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/xuxuefeng.png"
-                           size="medium"
-                           shape="circle"
-                        />
-                        <Avatar label="+2" shape="circle" size="medium" />
-                     </AvatarGroup>
+                     <team />
                   </div>
                </div>
+
                <div>
-                  <Button label="Solicitar demo" class="w-full" />
+                  <Button
+                     label="Solicitar demo"
+                     class="w-full"
+                     @click="visible = true"
+                  />
                </div>
             </div>
          </div>
       </div>
    </div>
+   <!-- platform web -->
    <div
       class="flex flex-column flex sm:flex-column justify-content-between align-items-center h-auto mt-3 p-3 gap-2"
       style="border: 2px solid #1f1f1f; border-radius: 8px"
    >
       <div class="flex flex-column sm:flex-column w-full gap-2">
-         <div class="flex flex-column sm:flex-row gap-2 w-full">
+         <div id="warp" class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="card">
                <div class="flex flex-row w-full justify-content-between">
                   <div class="flex flex-row align-items-center gap-2">
                      <span class="span-cuadrado">
                         <i class="pi pi-graduation-cap"></i>
                      </span>
-                     <h3>Agrow</h3>
+                     <h3>Platform Web</h3>
                   </div>
                </div>
-               <div class="pill">
-                  <p>Categoría</p>
-                  <span>Web Development</span>
+               <div>
+                  <br />
+                  <div>
+                     <Chip
+                        :style="{
+                           backgroundColor: '#27272a',
+                        }"
+                        label="Categoria: Web Development "
+                     />
+                  </div>
+                  <br />
                </div>
                <div>
-                  <p>
-                     Ofrece soluciones integrales para agricultores, protegiendo
-                     su inversión y garantizando la tranquilidad que necesita
-                     para enfocarse en lo que mejor sabe hacer cultivar el
-                     futuro.
+                  <p class="text-justify">
+                     Nuestro cotizador de seguros está diseñado para transformar
+                     la venta de pólizas en línea, permitiendo a los clientes
+                     finales elegir las mejores coberturas desde cualquier
+                     dispositivo móvil. <br />Con una interfaz mobile-first,
+                     esta plataforma garantiza una navegación ágil y sin
+                     interrupciones, ideal para empresas que desean integrar la
+                     venta de seguros directamente en sus sitios web.<br />
+                     Además, es completamente personalizable para adaptarse al
+                     look and feel de la marca, ofreciendo una experiencia
+                     coherente y de confianza.
                   </p>
                </div>
             </div>
             <div class="card-img">
                <img
                   class="img-soft"
-                  src="./assets/Group 81.jpg"
+                  src="./assets/platformweb.jpeg"
                   alt="platform"
                   width="100%"
                />
@@ -133,71 +132,226 @@
             <div class="card-end">
                <div class="frameworks">
                   <div class="flex flex-row w-full justify-content-between">
-                     <div class="flex flex-row align-items-center gap-2 mb-3">
-                        <h3>Tecnologías utilizadas</h3>
-                     </div>
-                  </div>
-                  <div
-                     class="flex flex-wrap justify-content-center align-items-center gap-3"
-                  >
-                     <div class="pill">
-                        <p>React</p>
-                     </div>
-                     <div class="pill">
-                        <p>Redux</p>
-                     </div>
-                     <div class="pill">
-                        <p>Rest API</p>
-                     </div>
-                     <div class="pill">
-                        <p>javascript</p>
-                     </div>
+                     <div
+                        class="flex flex-row align-items-center gap-2 mb-3"
+                     ></div>
+                     <TecnologiasUtilizadas />
                   </div>
                </div>
+
                <div class="frameworks-dos">
-                  <h3>Team Members</h3>
+                  <h3>Team</h3>
                   <div class="flex flex-row">
-                     <AvatarGroup>
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
-                           size="large sm:medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png"
-                           size="large sm:medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png"
-                           size="large sm:medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png"
-                           size="large sm:medium"
-                           shape="circle"
-                        />
-                        <Avatar
-                           image="https://primefaces.org/cdn/primevue/images/avatar/xuxuefeng.png"
-                           size="large sm:medium"
-                           shape="circle"
-                        />
-                     </AvatarGroup>
+                     <team />
                   </div>
                </div>
                <div>
-                  <Button label="Solicitar demo" class="w-full" />
+                  <Button
+                     label="Solicitar demo"
+                     class="w-full"
+                     @click="visible = true"
+                  />
                </div>
             </div>
          </div>
       </div>
    </div>
+   <!-- multiagro -->
+   <div
+      class="flex flex-column flex sm:flex-column justify-content-between align-items-center h-auto mt-3 p-3 gap-2"
+      style="border: 2px solid #1f1f1f; border-radius: 8px"
+   >
+      <div class="flex flex-column sm:flex-column w-full gap-2">
+         <div id="warp" class="flex flex-column sm:flex-row gap-2 w-full">
+            <div class="card">
+               <div class="flex flex-row w-full justify-content-between">
+                  <div class="flex flex-row align-items-center gap-2">
+                     <span class="span-cuadrado">
+                        <i class="pi pi-graduation-cap"></i>
+                     </span>
+                     <h3>Multi Agro</h3>
+                  </div>
+               </div>
+               <div>
+                  <br />
+                  <div>
+                     <Chip
+                        :style="{
+                           backgroundColor: '#27272a',
+                        }"
+                        label="Categoria: Web Development "
+                     />
+                  </div>
+                  <br />
+               </div>
+               <div>
+                  <p class="text-justify">
+                     Multi Agro es la solución definitiva para la
+                     comercialización de seguros agrícolas, especialmente
+                     diseñada para brindar cobertura frente a riesgos como el
+                     granizo, adaptable a otros eventos. <br />
+                     Esta plataforma conecta a los productores con las
+                     principales aseguradoras, facilitando una toma de
+                     decisiones rápida y eficiente al permitir la comparación de
+                     cotizaciones entre compañías en línea. Su sistema unificado
+                     no solo optimiza los tiempos de gestión, sino que permite
+                     ofrecer soluciones personalizadas para proteger los
+                     cultivos de tus clientes con total transparencia y
+                     facilidad de uso.
+                  </p>
+               </div>
+            </div>
+            <div class="card-img">
+               <img
+                  class="img-soft"
+                  src="./assets/Group 81.jpeg"
+                  alt="platform"
+                  width="100%"
+               />
+            </div>
+            <div class="card-end">
+               <div class="frameworks">
+                  <div class="flex flex-row w-full justify-content-between">
+                     <div
+                        class="flex flex-row align-items-center gap-2 mb-3"
+                     ></div>
+                     <TecnologiasUtilizadas />
+                  </div>
+               </div>
+
+               <div class="frameworks-dos">
+                  <h3>Team</h3>
+                  <div class="flex flex-row">
+                     <team />
+                  </div>
+               </div>
+               <div>
+                  <Button
+                     label="Solicitar demo"
+                     class="w-full"
+                     @click="visible = true"
+                  />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- cotiza plus -->
+   <div
+      class="flex flex-column flex sm:flex-column justify-content-between align-items-center h-auto mt-3 p-3 gap-2"
+      style="border: 2px solid #1f1f1f; border-radius: 8px"
+   >
+      <div class="flex flex-column sm:flex-column w-full gap-2">
+         <div id="warp" class="flex flex-column sm:flex-row gap-2 w-full">
+            <div class="card">
+               <div class="flex flex-row w-full justify-content-between">
+                  <div class="flex flex-row align-items-center gap-2">
+                     <span class="span-cuadrado">
+                        <i class="pi pi-graduation-cap"></i>
+                     </span>
+                     <h3>Cotiza Plus</h3>
+                  </div>
+               </div>
+               <div>
+                  <br />
+                  <div>
+                     <Chip
+                        :style="{
+                           backgroundColor: '#27272a',
+                        }"
+                        label="Categoria: Web Development "
+                     />
+                  </div>
+                  <br />
+               </div>
+               <div>
+                  <p class="text-justify">
+                     Nuestro cotizador de seguros vehiculares ofrece una
+                     solución innovadora para consumidores finales, brindando la
+                     posibilidad de comparar en tiempo real las mejores
+                     coberturas y precios de las principales aseguradoras.
+                     <br />Con solo unos pocos datos, los usuarios pueden
+                     generar cotizaciones personalizadas y visualizar las
+                     opciones disponibles de manera inmediata. Su plataforma
+                     intuitiva y diseñada para maximizar la eficiencia garantiza
+                     que cada cliente encuentre la oferta ideal para sus
+                     necesidades, transformando la cotización en un proceso
+                     rápido, claro y altamente efectivo.
+                  </p>
+               </div>
+            </div>
+            <div class="card-img">
+               <img
+                  class="img-soft"
+                  src="./assets/cotizaplus.jpeg"
+                  alt="platform"
+                  width="100%"
+               />
+            </div>
+            <div class="card-end">
+               <div class="frameworks">
+                  <div class="flex flex-row w-full justify-content-between">
+                     <div
+                        class="flex flex-row align-items-center gap-2 mb-3"
+                     ></div>
+                     <TecnologiasUtilizadas />
+                  </div>
+               </div>
+
+               <div class="frameworks-dos">
+                  <h3>Team</h3>
+                  <div class="flex flex-row">
+                     <team />
+                  </div>
+               </div>
+               <div>
+                  <Button
+                     label="Solicitar demo"
+                     class="w-full"
+                     @click="visible = true"
+                  />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- dialog -->
+   <div>
+      <Dialog
+         v-model:visible="visible"
+         modal
+         header="Solicitud de producto"
+         :style="{
+            width: 'auto',
+            backgroundColor: ' #1a1a1a',
+            border: ' #1a1a1a',
+         }"
+      >
+         <span class="p-text-secondary block mb-5"
+            >Para avanzar, por favor complete los siguientes campos.</span
+         >
+         <div><formDemo /></div>
+      </Dialog>
+   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+import formDemo from './components/formDemo.vue';
+import TecnologiasUtilizadas from './components/tecnologiasUtilizadas.vue';
+import team from './components/team.vue';
+
+const visible = ref(false);
+</script>
 
 <style scoped>
+.text-justify {
+   text-align: justify;
+   text-align-last: left;
+   word-spacing: -0.1em;
+   letter-spacing: 0.05em;
+}
+
 .header {
    width: 100%;
    background-color: #1a1a1a;
@@ -220,7 +374,6 @@ h2 {
    padding: 24px;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
 }
 .card-img {
    height: 400px;
@@ -232,7 +385,7 @@ h2 {
 }
 
 .card-end {
-   height: 400px;
+   height: auto;
    width: 100%;
    border-radius: 4px;
    display: flex;
@@ -240,14 +393,14 @@ h2 {
    justify-content: space-between;
 }
 .frameworks {
-   height: 240px;
+   height: 250px;
    width: 100%;
    background-color: #1a1a1a;
    border-radius: 4px;
    padding: 24px;
 }
 .frameworks-dos {
-   height: 100px;
+   height: auto;
    width: 100%;
    background-color: #1a1a1a;
    border-radius: 4px;
@@ -282,19 +435,9 @@ i {
 }
 p {
    color: #b3b3b2;
+   margin: 0px;
 }
-.pill {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   gap: 8px;
-   background-color: #2c2c2c;
-   border-radius: 100px;
-   width: fit-content;
-   padding-left: 15px;
-   padding-right: 15px;
-   border: 1px solid #3d3d3d;
-}
+
 .img-soft {
    height: 100%;
    border-radius: 2px;
@@ -304,10 +447,25 @@ h3 {
    margin: 8px;
    font-weight: 500;
 }
-@media (max-width: 900px) {
+#warp {
+   display: flex;
+   flex-direction: row;
+}
+@media (max-width: 1000px) {
+   #warp {
+      display: flex;
+      flex-direction: column !important;
+   }
    .card {
-      height: 300px;
+      height: auto;
       width: 100%;
+   }
+   .frameworks {
+      height: auto;
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 4px;
+      padding: 24px;
    }
    i {
       color: aquamarine;
@@ -321,8 +479,8 @@ h3 {
       font-size: 1rem;
    }
    .card-img {
-      height: 250px;
-      width: 100%;
+      height: auto;
+      width: auto;
       border-radius: 4px;
       background-color: #1a1a1a;
       display: flex;
@@ -330,22 +488,16 @@ h3 {
    }
 
    .card-end {
-      height: 400px;
+      height: auto;
       width: 100%;
       border-radius: 4px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 10px;
    }
-   .frameworks {
-      height: 200px;
-      width: 100%;
-      background-color: #1a1a1a;
-      border-radius: 4px;
-      padding: 24px;
-   }
+
    .frameworks-dos {
-      height: 100px;
+      height: auto;
       width: 100%;
       background-color: #1a1a1a;
       border-radius: 4px;
@@ -365,42 +517,118 @@ h3 {
       align-items: center;
       justify-content: center;
    }
-   .span-circulo {
-      width: 45px;
-      height: 45px;
-      border: 1px solid rgb(54, 54, 54);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 300px;
-      margin-right: 8px;
-   }
+
    i {
       color: aquamarine;
       font-size: 1rem;
    }
    p {
       color: #b3b3b2;
-      font-size: 0.8rem;
+      font-size: 15px;
    }
-   .pill {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 8px;
-      background-color: #2c2c2c;
-      border-radius: 100px;
-      width: fit-content;
-      padding-left: 8px;
-      padding-right: 8px;
-      border: 1px solid #3d3d3d;
-   }
+
    .img-soft {
       height: 100%;
       border-radius: 2px;
    }
    span {
       font-size: 0.7rem;
+   }
+   .text-justify {
+      text-align: justify;
+      text-align-last: left;
+      word-spacing: -0.2em;
+      letter-spacing: 0.01em;
+   }
+}
+@media (max-width: 1024px) {
+   #warp {
+      display: flex;
+      flex-direction: column !important;
+   }
+   .card {
+      height: auto;
+      width: 100%;
+   }
+   .frameworks {
+      height: auto;
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 4px;
+      padding: 24px;
+   }
+   i {
+      color: aquamarine;
+      font-size: 1rem;
+   }
+   h2 {
+      font-size: 1rem;
+      font-weight: 600;
+   }
+   h3 {
+      font-size: 1rem;
+   }
+   .card-img {
+      height: auto;
+      width: auto;
+      border-radius: 4px;
+      background-color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .card-end {
+      height: auto;
+      width: 100%;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .frameworks-dos {
+      height: auto;
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 4px;
+      padding: 24px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .span-cuadrado {
+      border: 1px solid rgb(54, 54, 54);
+      border-radius: 16px;
+      height: 45px;
+      width: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   i {
+      color: aquamarine;
+      font-size: 1rem;
+   }
+   p {
+      color: #b3b3b2;
+      font-size: 15px;
+   }
+
+   .img-soft {
+      height: 100%;
+      border-radius: 2px;
+   }
+   span {
+      font-size: 0.7rem;
+   }
+   .text-justify {
+      text-align: justify;
+      text-align-last: left;
+      word-spacing: -0.2em;
+      letter-spacing: 0.01em;
    }
 }
 </style>

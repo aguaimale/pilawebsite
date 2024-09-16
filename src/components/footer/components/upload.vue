@@ -10,6 +10,7 @@
             @upload="onUpload"
             :auto="true"
             chooseLabel="Cargar CV"
+            outlined
          />
       </form>
    </div>

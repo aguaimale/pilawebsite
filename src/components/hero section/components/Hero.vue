@@ -1,13 +1,16 @@
 <template>
    <div>
-      <h1>Create, <br />build and inspire.</h1>
+      <h1 v-motion-fade-visible-once :delay="200" :duration="1200">
+         Create, <br />build and inspire.
+      </h1>
       <div>
-         <p class="mb-5">
-            En Pila IT, sabemos que las soluciones digitales pueden transformar
-            negocios. Nuestro equipo de especialistas está comprometido a
-            apoyar<br />
-            empresas como la suya para que sobresalgan en un entorno digital en
-            constante evolución.
+         <p class="mb-1 font-semibold">
+            En Pila IT diseñamos y damos forma a proyectos digitales porque
+            sabemos que pueden transformar negocios.
+         </p>
+         <p class="mt-2 font-semibold">
+            Somos aliados, generamos una sinergia tecnológica para el
+            crecimiento de su propuesta.
          </p>
       </div>
    </div>
@@ -17,7 +20,8 @@
 
 <style scoped>
 h1 {
-   font-size: 9rem;
+   font-size: 7rem;
+   font-weight: 900;
    margin: 0px;
    color: #33333300;
    position: relative;
@@ -32,11 +36,17 @@ h1 {
 h1:hover {
    background-position: 100% 0;
 }
+p {
+   color: #b3b3b2;
+}
 
 @media (max-width: 900px) {
    h1 {
-      font-size: 5rem;
+      font-size: 4rem;
       margin: 0px;
+   }
+   p {
+      font-size: 15px;
    }
 }
 </style>

@@ -7,9 +7,14 @@
          <h2>NUESTROS SERVICIOS</h2>
       </div>
       <div class="flex flex-column sm:flex-row w-full gap-2">
-         <div class="card">
+         <div
+            v-motion-fade-visible-once
+            :delay="500"
+            :duration="1200"
+            class="card"
+         >
             <div class="flex flex-row w-full justify-content-between mt-2">
-               <div class="flex flex-row align-items-center gap-2">
+               <div class="flex flex-row align-items-center">
                   <span class="span-cuadrado">
                      <i class="pi pi-palette"></i>
                   </span>
@@ -18,19 +23,20 @@
             </div>
             <div>
                <p>
-                  Nuestro servicio de diseño web se enfoca en la creación de
-                  sitios web visualmente impactantes y altamente intuitivos. Nos
-                  aseguramos de que cada página no solo sea estéticamente
-                  atractiva, sino también fácil de navegar, proporcionando una
-                  experiencia de usuario excepcional que deja una impresión
-                  duradera en sus visitantes.
+                  Nos especializamos en crear sitios web que combinan impacto
+                  visual y usabilidad. Cada diseño es pensado para ser atractivo
+                  y fácil de navegar, brindando una experiencia memorable que
+                  logra conectar con los visitantes y deja una impresión
+                  positiva.
                </p>
             </div>
-            <div class="flex w-full justify-content-end">
-               <h3>Starts From $1,500</h3>
-            </div>
          </div>
-         <div class="card">
+         <div
+            v-motion-fade-visible-once
+            :delay="1000"
+            :duration="1200"
+            class="card"
+         >
             <div class="flex flex-row w-full justify-content-between">
                <div class="flex flex-row align-items-center gap-2">
                   <span class="span-cuadrado">
@@ -41,19 +47,22 @@
             </div>
             <div>
                <p>
-                  Con nuestro servicio de desarrollo de aplicaciones móviles,
-                  aprovechamos el poder de la tecnología móvil para crear
-                  aplicaciones de vanguardia que mantienen a sus clientes
-                  comprometidos en todo momento.
+                  Desarrollamos aplicaciones móviles que destacan por su
+                  funcionalidad y diseño. Utilizamos tecnología de vanguardia
+                  para crear soluciones que mantienen a los usuarios conectados
+                  y comprometidos, brindando una experiencia fluida en todo
+                  momento.
                </p>
-            </div>
-            <div class="flex w-full justify-content-end">
-               <h3>Starts From $1,500</h3>
             </div>
          </div>
       </div>
       <div class="flex flex-column sm:flex-row w-full gap-2">
-         <div class="card">
+         <div
+            v-motion-fade-visible-once
+            :delay="1500"
+            :duration="1200"
+            class="card"
+         >
             <div class="flex flex-row w-full justify-content-between">
                <div class="flex flex-row align-items-center gap-2">
                   <span class="span-cuadrado">
@@ -64,36 +73,34 @@
             </div>
             <div>
                <p>
-                  Nuestro servicio de desarrollo web se centra en convertir su
-                  sitio web en un poderoso activo digital. Utilizamos las
-                  tecnologías más avanzadas y las mejores prácticas de la
-                  industria para construir sitios web de alta calidad.
+                  Construimos sitios web que se convierten en verdaderos activos
+                  digitales. Aplicamos tecnologías avanzadas y estándares de la
+                  industria para garantizar que cada sitio sea eficiente, rápido
+                  y optimizado para ofrecer un rendimiento excelente.
                </p>
             </div>
-            <div class="flex w-full justify-content-end">
-               <h3>Starts From $1,500</h3>
-            </div>
          </div>
-         <div class="card">
+         <div
+            v-motion-fade-visible-once
+            :delay="2000"
+            :duration="1200"
+            class="card"
+         >
             <div class="flex flex-row w-full justify-content-between">
                <div class="flex flex-row align-items-center gap-2">
                   <span class="span-cuadrado">
                      <i class="pi pi-graduation-cap"></i>
                   </span>
-                  <h3>Consultoría Tecnológica</h3>
+                  <h3>Tech Consulting</h3>
                </div>
             </div>
             <div>
                <p>
-                  En la era digital, contar con el asesoramiento adecuado es
-                  crucial para el éxito de su negocio. Nuestro servicio de
-                  consultoría tecnológica ofrece soluciones estratégicas y
-                  personalizadas para optimizar sus operaciones y alcanzar sus
-                  objetivos empresariales.
+                  Ofrecemos consultoría tecnológica para mejorar el desempeño de
+                  su empresa. A través de soluciones estratégicas, ayudamos a
+                  optimizar procesos y operaciones, asegurando que logren sus
+                  objetivos de manera efectiva y con el máximo rendimiento.
                </p>
-            </div>
-            <div class="flex w-full justify-content-end">
-               <h3>Starts From $1,500</h3>
             </div>
          </div>
       </div>
@@ -121,20 +128,20 @@ p {
    color: #b3b3b2;
 }
 .card {
-   height: 400px;
+   height: 310px;
    width: 100%;
    border-radius: 4px;
    background-color: #1a1a1a;
    padding: 32px;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .span-cuadrado {
    border: 1px solid rgb(54, 54, 54);
-   border-radius: 16px;
-   height: 45px;
-   width: 45px;
+   border-radius: 10px;
+   height: 40px;
+   width: 40px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -175,7 +182,7 @@ h3 {
 
    p {
       color: #b3b3b2;
-      font-size: 0.8rem;
+      font-size: 15px;
    }
    i {
       color: aquamarine;

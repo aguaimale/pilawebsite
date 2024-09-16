@@ -4,191 +4,109 @@
       style="border: 2px solid #1f1f1f; border-radius: 8px"
    >
       <div class="flex flex-column sm:flex-row w-full gap-2">
-         <div class="flex sm:flex-row gap-2 w-full">
-            <div class="card">
-               <div class="flex flex-column justify-content-between h-full">
-                  <div
-                     class="flex flex-row w-full justify-content-between mt-2"
-                  >
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-cuadrado">
-                           <i class="pi pi-instagram"></i>
-                        </span>
-                     </div>
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-circulo">
-                           <i
-                              class="pi pi-arrow-up-right"
-                              style="color: white"
-                           ></i>
-                        </span>
-                     </div>
-                  </div>
-                  <div>
-                     <h3>INSTAGRAM</h3>
-                     <p>
-                        Nuestro servicio de diseño web se enfoca en la creación
-                        de sitios web visualmente impactantes y altamente
-                        intuitivos.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="card">
-               <div class="flex flex-column justify-content-between h-full">
-                  <div
-                     class="flex flex-row w-full justify-content-between mt-2"
-                  >
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-cuadrado">
-                           <i class="pi pi-facebook"></i>
-                        </span>
-                     </div>
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-circulo">
-                           <i
-                              class="pi pi-arrow-up-right"
-                              style="color: white"
-                           ></i>
-                        </span>
-                     </div>
-                  </div>
-                  <div>
-                     <h3>FACEBOOK</h3>
-                     <p>
-                        Nuestro servicio de diseño web se enfoca en la creación
-                        de sitios web visualmente impactantes y altamente
-                        intuitivos.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
          <div class="flex sm:flex-row w-full">
             <div class="card-links">
                <div class="flex flex-column">
-                  <h4>Home</h4>
-                  <p>Why Us</p>
-                  <p>About Us</p>
-                  <p>Testimonials</p>
-                  <p>FAQ’s</p>
+                  <h4>Sitio</h4>
+                  <p class="terminos" @click="scrollToSection('home')">Home</p>
+                  <p class="terminos" @click="scrollToSection('nosotros')">
+                     Nosotros
+                  </p>
+                  <p class="terminos" @click="scrollToSection('servicios')">
+                     Servicios
+                  </p>
+                  <p class="terminos" @click="scrollToSection('proyectos')">
+                     Proyectos
+                  </p>
                </div>
                <div class="flex flex-column">
                   <h4>Servicios</h4>
-                  <p>Web Development</p>
-                  <p>App Development</p>
+                  <p>Web Dev</p>
                   <p>Web Design</p>
-                  <p>Digital Marketing</p>
+                  <p>Mobile Dev</p>
+                  <p>Tech Consulting</p>
                </div>
                <div class="flex flex-column">
                   <h4>Proyectos</h4>
-                  <p>Platform</p>
-                  <p>Agrow</p>
-                  <p>Octous</p>
-                  <p>Platform web</p>
+                  <p>Platform Evo</p>
+                  <p>Platform Web</p>
+                  <p>Multi Agro</p>
+                  <p>Cotiza Plus</p>
                </div>
             </div>
          </div>
-      </div>
-      <div class="flex flex-column sm:flex-row w-full gap-2">
-         <div class="flex sm:flex-row gap-2 w-full">
-            <div class="card">
-               <div class="flex flex-column justify-content-between h-full">
-                  <div
-                     class="flex flex-row w-full justify-content-between mt-2"
-                  >
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-cuadrado">
-                           <i class="pi pi-github"></i>
-                        </span>
-                     </div>
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-circulo">
-                           <i
-                              class="pi pi-arrow-up-right"
-                              style="color: white"
-                           ></i>
-                        </span>
-                     </div>
-                  </div>
-                  <div>
-                     <h3>GITHUB</h3>
-                     <p>
-                        Nuestro servicio de diseño web se enfoca en la creación
-                        de sitios web visualmente impactantes y altamente
-                        intuitivos.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="card">
-               <div class="flex flex-column justify-content-between h-full">
-                  <div
-                     class="flex flex-row w-full justify-content-between mt-2"
-                  >
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-cuadrado">
-                           <i class="pi pi-linkedin"></i>
-                        </span>
-                     </div>
-                     <div class="flex flex-row align-items-center">
-                        <span class="span-circulo">
-                           <i
-                              class="pi pi-arrow-up-right"
-                              style="color: white"
-                           ></i>
-                        </span>
-                     </div>
-                  </div>
-                  <div>
-                     <h3>LINKEDING</h3>
-                     <p>
-                        Nuestro servicio de diseño web se enfoca en la creación
-                        de sitios web visualmente impactantes y altamente
-                        intuitivos.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
+         <!-- SUBIR CV -->
          <div class="flex flex-column sm:flex-column w-full gap-2">
             <div class="card-newsletter">
                <div>
-                  <h3>Únete a Nuestro Equipo</h3>
-                  <div>
+                  <h3>Sumate a Nuestro Equipo</h3>
+                  <div style="margin-left: 10px">
                      <p>
-                        Estamos buscando personas talentosas para unirse a
-                        nuestro equipo. Ingresa tu correo y envíanos tu CV.
+                        Si eres una persona innovadora, con ganas de enfrentar
+                        nuevos desafíos y contribuir al éxito de proyectos
+                        emocionantes ¡te queremos con nosotros!.
                      </p>
-                     <div class="flex flex-column gap-2">
-                        <InputText
-                           id="newsletter"
-                           placeholder="Ingresa tu correo"
-                           v-model="value"
-                           size="large"
-                        />
-                     </div>
-                     <upload />
+                     <p>
+                        Envíanos tu C.V. a
+                        <a
+                           href="mailto:info@pilait.com.ar"
+                           class="text-primary font-bold"
+                           >info@pilait.com.ar</a
+                        >
+                     </p>
                   </div>
+                  <IconRow />
                </div>
             </div>
             <div class="card-footer">
+               <div class="flex flex-row gap-3">
+                  <p @click="visible = true" class="terminos">
+                     Terms & Conditions
+                  </p>
+                  <p>Privacy Policy</p>
+               </div>
                <p style="border-bottom: 1px solid #d9d9d9">
                   © 2024 PILA IT. All rights reserved.
                </p>
-
-               <div class="flex flex-row gap-3">
-                  <p>Terms & Conditions</p>
-                  <p>Privacy Policy</p>
-               </div>
             </div>
          </div>
       </div>
+      <div class="flex flex-column sm:flex-row w-full gap-2"></div>
+   </div>
+   <div>
+      <Dialog
+         v-model:visible="visible"
+         modal
+         header="Terminos y condiciones"
+         :style="{ maxWidth: '50rem' }"
+      >
+         <div>
+            <terminosCondiciones />
+         </div>
+      </Dialog>
    </div>
 </template>
 
 <script setup>
-import upload from './components/upload.vue';
+import { ref } from 'vue';
+import terminosCondiciones from './components/terminosCondiciones.vue';
+import IconRow from './components/iconRow.vue';
+
+const visible = ref(false);
+const value = ref('');
+
+const scrollToSection = (sectionId) => {
+   const section = document.getElementById(sectionId);
+   if (section) {
+      const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
+      const sectionPosition = section.offsetTop - navbarHeight;
+
+      window.scrollTo({
+         top: sectionPosition,
+         behavior: 'smooth',
+      });
+   }
+};
 </script>
 <style scoped>
 .card {
@@ -262,6 +180,13 @@ h3 {
    font-size: 1.5rem;
    margin: 8px;
    font-weight: 500;
+}
+.terminos {
+   cursor: pointer;
+}
+.terminos:hover {
+   cursor: pointer;
+   font-weight: 600;
 }
 @media (max-width: 900px) {
    .card {

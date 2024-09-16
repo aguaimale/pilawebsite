@@ -1,9 +1,9 @@
 <template>
    <div class="mt-6">
-      <section class="mt-4" id="home">
+      <section class="mt-6" id="home">
          <heroSection />
       </section>
-      <section class="mt-5" id="sobrenosotros">
+      <section class="mt-6" id="nosotros">
          <reason />
       </section>
       <section class="mt-6" id="servicios">
@@ -11,7 +11,6 @@
       </section>
       <section class="mt-5" id="proyectos">
          <works />
-         <testimonials />
       </section>
       <section class="mt-5" id="questions">
          <questions />
@@ -30,7 +29,6 @@ import heroSection from '@/components/hero section/heroSection.vue';
 import reason from '../components/reasons to/reason.vue';
 import services from '@/components/servicios/services.vue';
 import works from '@/components/work/works.vue';
-import testimonials from '@/components/testimonials/testimonials.vue';
 import questions from '@/components/questions/questions.vue';
 import calltoaction from '@/components/call to action/calltoaction.vue';
 import footervue from '@/components/footer/footervue.vue';

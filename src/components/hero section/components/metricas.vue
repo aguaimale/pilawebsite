@@ -21,11 +21,6 @@
                <p>Clientes felices</p>
                <h4 class="stats" data-target="100" data-suffix="%">0</h4>
             </div>
-
-            <div class="herocard">
-               <p>Seguidores</p>
-               <h4 class="stats" data-target="50" data-suffix="k">0</h4>
-            </div>
          </div>
          <div class="flex flex-column sm:flex-row gap-2 w-full">
             <div class="herocard">
@@ -33,7 +28,7 @@
                <h4 class="stats" data-target="20" data-suffix="+">0</h4>
             </div>
 
-            <div class="herocard-mas">
+            <div class="herocard-mas" @click="visible = true">
                <span class="circle-arrow">
                   <i
                      class="pi pi-arrow-up-right"
@@ -44,11 +39,52 @@
             </div>
          </div>
       </div>
+      <Dialog
+         v-model:visible="visible"
+         modal
+         header="Sobre Pila IT"
+         :style="{
+            width: '50rem',
+            backgroundColor: '#1a1a1a',
+            border: '#1a1a1a',
+         }"
+         :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
+      >
+         <p class="m-0 font-lighter">
+            Somos parte del Grupo Bertolaccini, una empresa innovadora que en
+            los 80 entendió lo fundamental de la computación como parte de su
+            estructura de trabajo y negocio.
+         </p>
+         <p class="mt-3 font-lighter">
+            Nacimos dando servicios de forma interna, como un área corporativa,
+            pero crecimos y desde 2020 somos una unidad de negocio, mejor
+            conocida como PILA iT.
+         </p>
+         <p class="mt-2 font-lighter">
+            De Rafaela (Santa Fe) al mundo, desde el interior del interior de
+            Argentina, brindamos servicios globales gracias a nuestra
+            experiencia en trabajo remoto y la co-creación digital con nuestros
+            clientes.
+         </p>
+         <p class="mt-2 font-lighter">
+            Construimos con metodologías ágiles y las últimas tecnologías para
+            asegurar una colaboración efectiva, de calidad y soluciones
+            escalables.
+         </p>
+         <p class="mt-1">
+            Los desafíos nos inspiran por eso trabajamos con startups hasta
+            grandes corporaciones, adaptando nuestras soluciones a las
+            necesidades específicas.
+         </p>
+         <h3>A cada desarrollo que nos convocan le metemos PILA.</h3>
+      </Dialog>
    </div>
 </template>
 
 <script setup>
 import { onMounted } from 'vue';
+import { ref } from 'vue';
+const visible = ref(false);
 
 const animateNumbers = () => {
    const elements = document.querySelectorAll('.stats');
@@ -128,6 +164,7 @@ onMounted(() => {
    background-color: #1a1a1a;
    border-radius: 8px;
    padding: 3px;
+   cursor: pointer;
 }
 
 .stats {
@@ -139,11 +176,16 @@ onMounted(() => {
    transition: color 0.3s ease;
 }
 
-p {
+p,
+b {
    font-weight: 500;
    font-size: 0.8rem;
    margin: 0;
    margin-top: 8px;
+   color: #b3b3b2;
+}
+h3 {
+   color: #b3b3b2;
 }
 
 @media (max-width: 900px) {

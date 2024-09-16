@@ -1,14 +1,17 @@
 <template>
    <div>
       <div class="callto">
-         <h2>¿Listo para transformar tu presencia digital?</h2>
-         <div class="text-button">
-            <p>
-               Da el primer paso hacia el éxito digital nuestro equipo de
-               expertos está listo para crear soluciones que impulsen el
-               crecimiento de su negocio.
-            </p>
-            <Button severity="contrast">Contactanos</Button>
+         <div class="content">
+            <h2>¡Llevá tu empresa al próximo nivel!</h2>
+            <div class="text-button">
+               <p>
+                  En Pila IT, te brindamos soluciones que impulsan el
+                  crecimiento y facilitan el día a día de tu negocio.<br />
+                  <b>
+                     ¡Comienza hoy y descubre todo lo que podemos lograr juntos!
+                  </b>
+               </p>
+            </div>
          </div>
       </div>
       <slider />
@@ -21,48 +24,107 @@ import slider from '@/components/hero section/components/slider.vue';
 
 <style scoped>
 .callto {
-   background-color: aquamarine;
-   height: 250px;
+   position: relative; /* Necesario para posicionar el overlay dentro del contenedor */
+   background-image: url('./calltoAction.png');
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   height: 350px;
    border-radius: 8px;
    margin-top: 16px;
    margin-bottom: 16px;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: flex-start;
+   align-items: start;
    padding: 64px;
+   color: rgb(0, 0, 0);
+   overflow: hidden;
 }
+
+.callto::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.4); /* Overlay oscuro */
+   z-index: 1; /* Overlay por debajo del contenido */
+}
+
+.callto .content {
+   position: relative;
+   z-index: 2; /* Contenido por encima del overlay */
+   color: #ffffff; /* Color del texto blanco para contraste */
+   width: 100%; /* Asegura que el contenido ocupe el ancho completo */
+}
+
 h2 {
-   color: black;
    font-size: 3rem;
    margin-bottom: 3px;
    margin-top: 3px;
+   color: rgb(255, 255, 255);
 }
+
 p {
-   color: black;
+   color: rgb(255, 255, 255);
 }
+
 .text-button {
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 90%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   width: 100%;
 }
+
 @media (max-width: 900px) {
    .callto {
-      padding: 12px;
+      position: relative; /* Necesario para posicionar el overlay dentro del contenedor */
+      background-image: url('./calltoAction.png');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      height: 200px;
+      border-radius: 8px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: 64px;
+      color: rgb(0, 0, 0);
+      overflow: hidden;
    }
+
+   .callto::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4); /* Overlay oscuro */
+      z-index: 1; /* Overlay por debajo del contenido */
+   }
+
+   .callto .content {
+      position: relative;
+      z-index: 2; /* Contenido por encima del overlay */
+      color: #ffffff; /* Color del texto blanco para contraste */
+      width: 100%; /* Asegura que el contenido ocupe el ancho completo */
+   }
+
    h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
    }
    p {
-      color: black;
       font-size: 0.8rem;
    }
    .text-button {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
+      flex-direction: column; /* Mantiene la disposición en columna en móviles */
    }
 }
 </style>

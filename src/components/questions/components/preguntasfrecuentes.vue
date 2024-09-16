@@ -12,9 +12,9 @@
                      style: {
                         backgroundColor: '#1a1a1a',
                         border: 'none',
-                        marginBottom: '12px',
+                        marginBottom: '8px',
                         borderRadius: '8px',
-                        height: '35px',
+                        height: '30px',
                         color: 'white',
                      },
                   },
@@ -29,7 +29,7 @@
                         border: 'none',
                         backgroundColor: '#1a1a1a',
                         borderRadius: '8px',
-                        marginBottom: '7px',
+                        marginBottom: '20px',
                      },
                   },
                }"
@@ -50,32 +50,37 @@ const tabs = ref([
    {
       title: '¿Qué servicios ofrece Pila IT?',
       content:
-         'Pila IT ofrece una gama de servicios que incluyen desarrollo de software, consultoría en TI, integración de sistemas y soporte técnico. Nos especializamos en crear soluciones a medida para satisfacer las necesidades únicas de nuestros clientes.',
+         'Ofrecemos una gama de opciones que incluye desarrollo de software, consultoría en IT, integración de sistemas y soporte técnico.  Creamos soluciones a medida que se adaptan a las necesidades únicas de cada cliente.',
       value: '0',
    },
    {
       title: '¿Cómo puedo contactar a Pila IT para soporte?',
       content:
-         'Puede contactar a nuestro equipo de soporte a través del correo electrónico support@pilait.com o llamarnos al (123) 456-7890. Nuestro horario de soporte es de lunes a viernes, de 9 AM a 6 PM.',
+         'Puede contactar al equipo de soporte a través del correo electrónico: info@pilait.com.ar Atención: Lunes a viernes, de 8 AM a 5 PM.',
       value: '1',
    },
    {
       title: '¿Ofrecen servicios de desarrollo personalizado?',
       content:
-         'Sí, en Pila IT nos especializamos en el desarrollo de software personalizado. Trabajamos estrechamente con nuestros clientes para entender sus necesidades y desarrollar soluciones que se adapten a sus requisitos específicos.',
+         'Sí, nos especializamos en el desarrollo de software a medida. Trabajamos estrechamente con nuestros clientes para entender sus necesidades y desarrollar soluciones que se adapten a sus requisitos específicos.',
       value: '2',
    },
    {
       title: '¿Qué tecnologías utilizan?',
       content:
-         'En Pila IT utilizamos una variedad de tecnologías modernas y eficientes, incluyendo pero no limitado a JavaScript, Python, Java, C#, y frameworks como Vue.js, React, y Angular.',
+         'Utilizamos herramientas y metodologías que nos permiten desarrollar soluciones robustas, escalables y seguras, adaptadas a las necesidades específicas de cada proyecto. Nuestra infraestructura tecnológica está diseñada para garantizar alto rendimiento, integración eficiente y soporte continuo.',
       value: '3',
    },
    {
       title: '¿Cómo puedo solicitar una cotización?',
       content:
-         'Puede solicitar una cotización llenando el formulario en nuestro sitio web o enviándonos un correo electrónico a sales@pilait.com con los detalles de su proyecto. Nos pondremos en contacto con usted lo antes posible.',
+         'Puede solicitarla completando el formulario en nuestro sitio o enviando un correo a: info@pilait.com.ar, con los detalles de su proyecto. Nos pondremos en contacto a la brevedad.',
       value: '4',
    },
 ]);
 </script>
+<style scoped>
+p {
+   color: #b3b3b2;
+}
+</style>

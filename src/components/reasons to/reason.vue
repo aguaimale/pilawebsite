@@ -4,89 +4,67 @@
       style="border: 2px solid #1f1f1f; border-radius: 8px"
    >
       <div class="header">
-         <h2>RAZONES PARA TRABAJAR CON NOSOTROS</h2>
+         <h2>RAZONES PARA TRABAJAR JUNTOS</h2>
       </div>
-      <div class="flex flex-column sm:flex-row w-full gap-2">
+      <div class="flex flex-column sm:flex-column w-full gap-2">
          <div class="flex flex-column sm:flex-row gap-2 w-full">
-            <div class="card">
-               <div>
-                  <h3 class="mt-4">Tecnologías de Vanguardia.</h3>
+            <div v-motion-fade-visible-once :delay="500" class="card">
+               <div class="container">
+                  <h3 class="mt-4">
+                     Tecnologías de <br />
+                     <span class="span"> Vanguardia.</span>
+                  </h3>
                   <br />
                   <p>
-                     Pila asegura que tus proyectos estén impulsados por
-                     tecnologías de vanguardia, garantizando innovación y
-                     soluciones a prueba de futuro.
+                     Elaboramos proyectos impulsados por ciencia aplicada y
+                     herramientas tecnológicas diferenciales garantizando
+                     innovación y soluciones a prueba de futuro.
                   </p>
-               </div>
-
-               <div
-                  class="flex flex-row justify-content-start align-items-center mb-2 w-full"
-               >
-                  <span class="circle-arrow"
-                     ><i class="pi pi-arrow-up-right" style="color: #1f1f1f"></i
-                  ></span>
-                  <p class="m-0">Conoce más</p>
                </div>
             </div>
-            <div class="card">
-               <div>
-                  <h3 class="mt-4">Adaptabilidad Excepcional.</h3>
+            <div v-motion-fade-visible-once :delay="1000" class="card">
+               <div class="container">
+                  <h3 class="mt-4">
+                     Adaptabilidad <br />
+
+                     <span class="span">Excepcional.</span>
+                  </h3>
                   <br />
                   <p>
-                     Pila se adapta rápidamente a los cambios del mercado,
-                     asegurando que tus proyectos se mantengan relevantes y
+                     Adaptación a los cambios constantes del mercado y agilidad,
+                     concretamos proyectos que se mantengan relevantes y
                      competitivos.
                   </p>
-               </div>
-
-               <div
-                  class="flex flex-row justify-content-start align-items-center mb-2 w-full"
-               >
-                  <span class="circle-arrow"
-                     ><i class="pi pi-arrow-up-right" style="color: #1f1f1f"></i
-                  ></span>
-                  <p class="m-0">Conoce más</p>
                </div>
             </div>
          </div>
          <div class="flex flex-column sm:flex-row gap-2 w-full">
-            <div class="card">
-               <div>
-                  <h3 class="mt-4">Equipo Experto.</h3>
+            <div v-motion-fade-visible-once :delay="1500" class="card">
+               <div class="container">
+                  <h3 class="mt-4">
+                     Innovación <br />
+                     <span class="span"> Continua.</span>
+                  </h3>
                   <br />
                   <p>
-                     Un equipo altamente cualificado y apasionado trabaja en
-                     cada proyecto, aportando una riqueza de conocimientos y
-                     habilidades.
+                     Buscamos nuevas formas de evolucionar, asegurando que su
+                     empresa y proyecto estén siempre un paso adelante.
                   </p>
-               </div>
-
-               <div
-                  class="flex flex-row justify-content-start align-items-center mb-2 w-full"
-               >
-                  <span class="circle-arrow"
-                     ><i class="pi pi-arrow-up-right" style="color: #1f1f1f"></i
-                  ></span>
-                  <p class="m-0">Conoce más</p>
                </div>
             </div>
-            <div class="card">
-               <div>
-                  <h3 class="mt-4">Innovación Constante.</h3>
+            <div v-motion-fade-visible-once :delay="2000" class="card">
+               <div class="container">
+                  <h3 class="mt-4">
+                     Equipo <br />
+
+                     <span class="span"> Experto.</span>
+                  </h3>
                   <br />
                   <p>
-                     Pila siempre busca nuevas formas de mejorar y evolucionar,
-                     asegurando que estés siempre un paso adelante.
+                     Altamente calificados y apasionados, que aportan riqueza de
+                     conocimientos y habilidades, para brindar una colaboración
+                     efectiva y de calidad.
                   </p>
-               </div>
-
-               <div
-                  class="flex flex-row justify-content-start align-items-center mb-2 w-full"
-               >
-                  <span class="circle-arrow"
-                     ><i class="pi pi-arrow-up-right" style="color: #1f1f1f"></i
-                  ></span>
-                  <p class="m-0">Conoce más</p>
                </div>
             </div>
          </div>
@@ -97,6 +75,10 @@
 <script setup></script>
 
 <style scoped>
+.span {
+   font-weight: 700;
+   font-size: 2rem;
+}
 .header {
    width: 100%;
    background-color: #1a1a1a;
@@ -119,59 +101,56 @@ h3 {
 p {
    color: #b3b3b2;
 }
-i {
-   font-size: 1.5rem;
-}
-.circle-arrow {
-   width: 40px;
-   height: 40px;
-   background-color: #6b4fbc;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 300px;
-   margin-right: 8px;
-}
 .card {
-   height: 300px;
-   width: 100%;
+   height: auto;
+   width: 80%;
    border-radius: 4px;
    background-color: #1a1a1a;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
-   padding: 16px;
+   padding: 32px;
 }
+.container {
+   height: 80%;
+   justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+}
+
 @media (max-width: 900px) {
+   .text-justify {
+      text-align: justify;
+      text-align-last: left;
+      word-spacing: -0.2em;
+      letter-spacing: 0.01em;
+   }
    .card {
-      height: 300px;
+      height: 230px;
       width: 100%;
       padding: 10px;
    }
    h2 {
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: 600;
    }
    h3 {
       font-size: 1rem;
+      font-weight: 600;
    }
    p {
       color: #b3b3b2;
-      font-size: 0.8rem;
+      font-size: 15px;
    }
-   .circle-arrow {
-      width: 30px;
-      height: 30px;
-      background-color: #6b4fbc;
+   .container {
+      height: 100%;
+      justify-content: space-between;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 300px;
-      margin-right: 13px;
+      flex-direction: column;
    }
-   i {
-      font-size: 1rem;
+   .span {
+      font-size: 1.5rem;
    }
 }
 </style>

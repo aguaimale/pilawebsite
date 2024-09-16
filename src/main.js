@@ -1,4 +1,5 @@
 import './assets/main.css';
+import { MotionPlugin } from '@vueuse/motion';
 
 import { createApp } from 'vue';
 
@@ -26,6 +27,8 @@ import AvatarGroup from 'primevue/avatargroup';
 import Image from 'primevue/image';
 import FileUpload from 'primevue/fileupload';
 import Toast from 'primevue/toast';
+import Dialog from 'primevue/dialog';
+import Chip from 'primevue/chip';
 
 import App from './App.vue';
 import router from './router';
@@ -36,6 +39,7 @@ app.use(PrimeVue, {
       preset: Lara,
    },
 });
+app.use(MotionPlugin);
 
 //importaciones primevue
 app.component('Button', Button);
@@ -50,7 +54,9 @@ app.component('Avatar', Avatar);
 app.component('AvatarGroup', AvatarGroup);
 app.component('Image', Image);
 app.component('FileUpload', FileUpload);
+app.component('Dialog', Dialog);
 app.component('Toast', Toast);
+app.component('Chip', Chip);
 
 app.component('Card', Card);
 app.use(ToastService);

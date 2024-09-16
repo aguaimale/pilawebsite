@@ -24,7 +24,6 @@ const services = ref([
    'Mobile App Development',
    'Web Development',
    'E-commerce Solutions',
-   'Digital Marketing',
    'SEO Optimization',
    'Content Management Systems',
    'UI/UX Design',

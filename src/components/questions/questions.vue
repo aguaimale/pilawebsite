@@ -112,6 +112,7 @@ p {
    }
    .card-dos {
       width: 100%;
+      height: auto;
    }
    .herocard {
       width: 100%;

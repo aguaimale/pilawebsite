@@ -24,6 +24,7 @@
                      <Chip
                         :style="{
                            backgroundColor: '#27272a',
+                           fontSize: '13px',
                         }"
                         label="Categoria: Web Development "
                      />
@@ -100,6 +101,7 @@
                      <Chip
                         :style="{
                            backgroundColor: '#27272a',
+                           fontSize: '13px',
                         }"
                         label="Categoria: Web Development "
                      />
@@ -178,6 +180,7 @@
                      <Chip
                         :style="{
                            backgroundColor: '#27272a',
+                           fontSize: '13px',
                         }"
                         label="Categoria: Web Development "
                      />
@@ -258,6 +261,7 @@
                      <Chip
                         :style="{
                            backgroundColor: '#27272a',
+                           fontSize: '13px',
                         }"
                         label="Categoria: Web Development "
                      />
@@ -285,7 +289,6 @@
                   class="img-soft"
                   src="./assets/cotizaplus.jpeg"
                   alt="platform"
-                  width="100%"
                />
             </div>
             <div class="card-end">
@@ -345,13 +348,6 @@ const visible = ref(false);
 </script>
 
 <style scoped>
-.text-justify {
-   text-align: justify;
-   text-align-last: left;
-   word-spacing: -0.1em;
-   letter-spacing: 0.05em;
-}
-
 .header {
    width: 100%;
    background-color: #1a1a1a;
@@ -367,21 +363,23 @@ h2 {
    font-weight: 700;
 }
 .card {
-   height: 400px;
+   height: auto;
    width: 100%;
    border-radius: 4px;
    background-color: #1a1a1a;
    padding: 24px;
    display: flex;
    flex-direction: column;
+   justify-content: space-around;
 }
 .card-img {
-   height: 400px;
+   height: auto;
    width: 100%;
    border-radius: 4px;
    background-color: #1a1a1a;
    display: flex;
    flex-direction: column;
+   justify-content: center;
 }
 
 .card-end {
@@ -393,7 +391,7 @@ h2 {
    justify-content: space-between;
 }
 .frameworks {
-   height: 250px;
+   height: 240px;
    width: 100%;
    background-color: #1a1a1a;
    border-radius: 4px;
@@ -433,112 +431,64 @@ h2 {
 i {
    color: aquamarine;
 }
+
 p {
    color: #b3b3b2;
+   font-size: 15px;
    margin: 0px;
 }
 
 .img-soft {
-   height: 100%;
    border-radius: 2px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
+
 h3 {
    font-size: 1.5rem;
    margin: 8px;
    font-weight: 500;
 }
+
 #warp {
    display: flex;
    flex-direction: row;
 }
-@media (max-width: 1000px) {
-   #warp {
-      display: flex;
-      flex-direction: column !important;
-   }
-   .card {
-      height: auto;
-      width: 100%;
-   }
-   .frameworks {
-      height: auto;
-      width: 100%;
-      background-color: #1a1a1a;
-      border-radius: 4px;
-      padding: 24px;
-   }
-   i {
-      color: aquamarine;
-      font-size: 1rem;
-   }
+@media (min-width: 1025px) {
    h2 {
-      font-size: 1rem;
-      font-weight: 600;
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
    }
    h3 {
-      font-size: 1rem;
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
+   .img-soft {
+      object-fit: cover;
    }
    .card-img {
       height: auto;
-      width: auto;
-      border-radius: 4px;
-      background-color: #1a1a1a;
-      display: flex;
-      flex-direction: column;
+      width: 140%;
    }
-
-   .card-end {
-      height: auto;
-      width: 100%;
-      border-radius: 4px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+   .frameworks {
+      height: 66%;
    }
-
    .frameworks-dos {
-      height: auto;
-      width: 100%;
-      background-color: #1a1a1a;
-      border-radius: 4px;
-      padding: 24px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      height: 7opx;
    }
-   .span-cuadrado {
-      border: 1px solid rgb(54, 54, 54);
-      border-radius: 16px;
-      height: 45px;
-      width: 45px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-   }
-
-   i {
-      color: aquamarine;
-      font-size: 1rem;
-   }
+}
+@media (min-width: 1280px) {
    p {
       color: #b3b3b2;
-      font-size: 15px;
+      font-size: 16px;
    }
-
-   .img-soft {
-      height: 100%;
-      border-radius: 2px;
-   }
-   span {
-      font-size: 0.7rem;
-   }
-   .text-justify {
-      text-align: justify;
-      text-align-last: left;
-      word-spacing: -0.2em;
-      letter-spacing: 0.01em;
+   .frameworks {
+      height: 70%;
    }
 }
 @media (max-width: 1024px) {
@@ -623,12 +573,6 @@ h3 {
    }
    span {
       font-size: 0.7rem;
-   }
-   .text-justify {
-      text-align: justify;
-      text-align-last: left;
-      word-spacing: -0.2em;
-      letter-spacing: 0.01em;
    }
 }
 </style>

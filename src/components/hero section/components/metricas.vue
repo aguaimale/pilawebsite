@@ -115,7 +115,7 @@ onMounted(() => {
 
 <style scoped>
 .card {
-   height: 42rem;
+   height: 40rem;
 }
 
 .card-uno {
@@ -186,6 +186,78 @@ b {
 }
 h3 {
    color: #b3b3b2;
+}
+@media (min-width: 1025px) {
+   .card {
+      height: 40rem;
+   }
+
+   .card-uno {
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 24px;
+   }
+
+   .card-dos {
+      width: 30%;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+   }
+
+   .circle-arrow {
+      width: 40px;
+      height: 40px;
+      background-color: #6b4fbc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 300px;
+      margin-right: 8px;
+   }
+
+   .herocard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 3px;
+   }
+
+   .herocard-mas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 3px;
+      cursor: pointer;
+   }
+
+   .stats {
+      color: #6b4fbc;
+      font-weight: 600;
+      font-size: 2.2rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+      transition: color 0.3s ease;
+   }
+
+   p,
+   b {
+      font-weight: 500;
+      font-size: 0.7rem;
+      margin: 0;
+      margin-top: 8px;
+      color: #b3b3b2;
+   }
 }
 
 @media (max-width: 900px) {

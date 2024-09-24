@@ -166,6 +166,21 @@ h3 {
    margin: 8px;
    font-weight: 500;
 }
+
+@media (min-width: 1025px) {
+   h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
+   }
+   h3 {
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
+}
 @media (max-width: 900px) {
    .card {
       height: 300px;
@@ -207,6 +222,11 @@ h3 {
       align-items: center;
       border-radius: 300px;
       margin-right: 8px;
+   }
+}
+@media (min-width: 1280px) {
+   p {
+      font-size: 16px;
    }
 }
 </style>

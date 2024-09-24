@@ -62,4 +62,16 @@ const consulta = ref('');
 label {
    font-weight: 700;
 }
+@media (min-width: 1025px) {
+   label {
+      font-weight: 600;
+      font-size: 14px;
+   }
+}
+@media (min-width: 1280px) {
+   label {
+      font-weight: 600;
+      font-size: 16px;
+   }
+}
 </style>

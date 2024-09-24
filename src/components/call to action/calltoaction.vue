@@ -78,6 +78,38 @@ p {
    align-items: start;
    width: 100%;
 }
+@media (min-width: 1025px) {
+   h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
+   }
+   h3 {
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
+   .callto {
+      position: relative; /* Necesario para posicionar el overlay dentro del contenedor */
+      background-image: url('./calltoAction.png');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      height: 250px;
+      border-radius: 8px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: 64px;
+      color: rgb(0, 0, 0);
+      overflow: hidden;
+   }
+}
 
 @media (max-width: 900px) {
    .callto {
@@ -125,6 +157,15 @@ p {
    }
    .text-button {
       flex-direction: column; /* Mantiene la disposición en columna en móviles */
+   }
+}
+@media (min-width: 1280px) {
+   h2 {
+      font-size: 2rem;
+   }
+   p {
+      color: #b3b3b2;
+      font-size: 16px;
    }
 }
 </style>

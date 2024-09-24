@@ -77,7 +77,7 @@
 <style scoped>
 .span {
    font-weight: 700;
-   font-size: 2rem;
+   font-size: 1.7rem;
 }
 .header {
    width: 100%;
@@ -90,11 +90,11 @@
    align-items: center;
 }
 h2 {
-   font-size: 2rem;
+   font-size: 1.7rem;
    font-weight: 700;
 }
 h3 {
-   font-size: 1.5rem;
+   font-size: 1.3rem;
    margin: 8px;
    font-weight: 500;
 }
@@ -117,6 +117,25 @@ p {
    justify-content: space-between;
    display: flex;
    flex-direction: column;
+}
+@media (min-width: 1025px) {
+   h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
+   }
+   h3 {
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
+}
+@media (min-width: 1280px) {
+   p {
+      font-size: 16px;
+   }
 }
 
 @media (max-width: 900px) {

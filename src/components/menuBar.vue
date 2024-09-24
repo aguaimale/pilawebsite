@@ -11,23 +11,26 @@
                         style: {
                            width: 'auto',
                            padding: '8px',
+                           border: 'black',
+                           backgroundColor: '#1a1a1a',
                         },
                      },
                      items: {
                         style: {
                            width: 'auto',
                            padding: '8px',
-                           border: '1px solid red',
                         },
                      },
                   }"
                >
                   <template #item="{ item, props }">
                      <a
+                        :href="
+                           '#' + item.label.toLowerCase().replace(/\s+/g, '')
+                        "
                         :class="{ active: activeSection === item.label }"
-                        class="flex align-items-center mr-2"
-                        v-bind="props"
-                        @click="scrollToSection(item.label)"
+                        class="menu-link"
+                        @click.prevent="scrollToSection(item.label)"
                         aria-label="Navegar a {{ item.label }}"
                      >
                         <span>{{ item.label }}</span>
@@ -62,11 +65,7 @@ const scrollToSection = (sectionId) => {
       const navbarHeight = document.querySelector('.navbar').offsetHeight || 50;
       const sectionPosition = section.offsetTop - navbarHeight;
 
-      window.scrollTo({
-         top: sectionPosition,
-         behavior: 'smooth',
-      });
-
+      window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
       activeSection.value = sectionId;
    }
 };
@@ -111,44 +110,43 @@ onBeforeUnmount(() => {
    left: 0;
    width: 100%;
    background-color: #1a1a1a;
-   border-radius: 0px;
    z-index: 1002;
+   border-radius: 0px;
+   height: 70px;
 }
 
 .logo {
    height: 50px;
 }
+a {
+   text-decoration: none; /* Elimina el subrayado */
+}
 
 .menu-items {
    display: flex;
-   align-items: center;
-   cursor: pointer;
-}
-
-.menu-items a:hover {
    background-color: #1a1a1a;
-   display: flex;
-
    width: 100%;
+   cursor: pointer;
+   height: 60px;
 }
-
+.menu-items * {
+   background-color: #1a1a1a;
+}
 .menu-items > * {
    background-color: #1a1a1a;
 }
 
-.menu-items a.active {
+.menu-link {
    display: flex;
-   justify-content: center;
    align-items: center;
-   font-weight: 700;
-   padding: 3px;
-   color: #65dcbe;
-   width: 100%;
-   border-radius: 2px;
+   padding: 8px;
+   font-weight: 500;
+   color: white;
+   font-size: 14px;
 }
 
-.menu-items a {
-   color: #65dcbe;
+.menu-link.active {
+   font-weight: 700;
 }
 
 /* Ajustes responsivos */
@@ -159,7 +157,9 @@ onBeforeUnmount(() => {
 
    .menu-items {
       flex-direction: column;
-      align-items: flex-start;
+   }
+   a {
+      text-decoration: none;
    }
 }
 </style>

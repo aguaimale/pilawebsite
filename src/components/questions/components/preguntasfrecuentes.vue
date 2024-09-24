@@ -16,6 +16,7 @@
                         borderRadius: '8px',
                         height: '30px',
                         color: 'white',
+                        fontSize: '0.9rem',
                      },
                   },
                }"
@@ -82,5 +83,19 @@ const tabs = ref([
 <style scoped>
 p {
    color: #b3b3b2;
+}
+@media (min-width: 1025px) {
+   h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
+   }
+   h3 {
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
 }
 </style>

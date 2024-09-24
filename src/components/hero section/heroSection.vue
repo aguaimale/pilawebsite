@@ -44,48 +44,15 @@ import metricas from './components/metricas.vue';
    background-color: #1a1a1a;
    border-radius: 8px;
 }
-.circle-arrow {
-   width: 40px;
-   height: 40px;
-   background-color: #6b4fbc;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 300px;
-   margin-right: 8px;
+@media (min-width: 1025px) {
+   .card {
+      height: 28rem;
+   }
 }
-.herocard {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 100px;
-   width: 100%;
-   background-color: #1a1a1a;
-   border-radius: 8px;
-   padding: 3px;
-}
-.herocard-mas {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   height: 100px;
-   width: 100%;
-   background-color: #1a1a1a;
-   border-radius: 8px;
-   padding: 3px;
-}
-.stats {
-   color: #6b4fbc;
-   font-weight: 600;
-   font-size: 2.6rem;
-   margin-top: 0;
-   margin-bottom: 8px;
-}
-p {
-   margin: 0;
-   margin-top: 8px;
+@media (min-width: 1280px) {
+   .card {
+      height: 42.5rem;
+   }
 }
 @media (max-width: 900px) {
    .card-uno {

@@ -104,6 +104,21 @@ p {
    padding-left: 16px;
 }
 
+@media (min-width: 1025px) {
+   h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
+   }
+   h3 {
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
+}
+
 @media (max-width: 900px) {
    .card-uno {
       width: 100%;

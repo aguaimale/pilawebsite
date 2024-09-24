@@ -3,7 +3,6 @@
       <div class="service-slot">
          <div class="slider">
             <ul class="horizontal-list">
-               <!-- Duplicar la lista de servicios -->
                <li
                   v-for="(service, index) in [...services, ...services]"
                   :key="index"
@@ -50,7 +49,6 @@ const services = ref([
    padding: 0;
    margin: 0;
    animation: slide 60s linear infinite;
-   /* Ajustar la duración de la animación según el contenido */
 }
 .horizontal-list li {
    margin-right: 30px;
@@ -68,5 +66,10 @@ const services = ref([
    color: aquamarine;
    font-weight: 800;
    margin-right: 10px;
+}
+@media (min-width: 1025px) {
+   li {
+      font-size: 14px;
+   }
 }
 </style>

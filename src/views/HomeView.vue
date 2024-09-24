@@ -1,6 +1,6 @@
 <template>
    <div class="mt-6">
-      <section class="mt-6" id="home">
+      <section class="mt-4" id="home">
          <heroSection />
       </section>
       <section class="mt-6" id="nosotros">

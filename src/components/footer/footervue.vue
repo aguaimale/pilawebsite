@@ -24,7 +24,7 @@
                   <p>Web Dev</p>
                   <p>Web Design</p>
                   <p>Mobile Dev</p>
-                  <p>Tech Consulting</p>
+                  <p>Consulting</p>
                </div>
                <div class="flex flex-column">
                   <h4>Proyectos</h4>
@@ -78,7 +78,11 @@
          v-model:visible="visible"
          modal
          header="Terminos y condiciones"
-         :style="{ maxWidth: '50rem' }"
+         :style="{
+            width: '50rem',
+            backgroundColor: '#1a1a1a',
+            border: '#1a1a1a',
+         }"
       >
          <div>
             <terminosCondiciones />
@@ -93,7 +97,6 @@ import terminosCondiciones from './components/terminosCondiciones.vue';
 import IconRow from './components/iconRow.vue';
 
 const visible = ref(false);
-const value = ref('');
 
 const scrollToSection = (sectionId) => {
    const section = document.getElementById(sectionId);
@@ -121,7 +124,7 @@ const scrollToSection = (sectionId) => {
    width: 100%;
    border-radius: 4px;
    background-color: #1a1a1a;
-   padding: 24px;
+   padding: 20px;
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -149,32 +152,10 @@ const scrollToSection = (sectionId) => {
    background-color: #000000;
    border: #1a1a1a;
 }
-.span-cuadrado {
-   border: 1px solid rgb(54, 54, 54);
-   border-radius: 16px;
-   height: 45px;
-   width: 45px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-.span-circulo {
-   width: 45px;
-   height: 45px;
-   border: 1px solid rgb(54, 54, 54);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 300px;
-   margin-right: 8px;
-}
-i {
-   color: aquamarine;
-   font-size: 1.5rem;
-}
+
 p {
    color: #b3b3b2;
+   font-size: 15px;
 }
 h3 {
    font-size: 1.5rem;
@@ -182,11 +163,28 @@ h3 {
    font-weight: 500;
 }
 .terminos {
-   cursor: pointer;
+   display: inline-block;
+   transition: transform 0.3s ease;
 }
+
 .terminos:hover {
+   color: aliceblue;
    cursor: pointer;
-   font-weight: 600;
+   transform: scale(1.1);
+}
+@media (min-width: 1025px) {
+   h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+   p {
+      font-size: 13px;
+   }
+   h3 {
+      font-size: 1.2rem;
+      margin: 8px;
+      font-weight: 500;
+   }
 }
 @media (max-width: 900px) {
    .card {
@@ -205,30 +203,7 @@ h3 {
       color: #b3b3b2;
       font-size: 0.8rem;
    }
-   i {
-      color: aquamarine;
-      font-size: 0.8rem;
-   }
-   .span-cuadrado {
-      border: 1px solid rgb(54, 54, 54);
-      border-radius: 16px;
-      height: 40px;
-      width: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-   }
-   .span-circulo {
-      width: 40px;
-      height: 40px;
-      border: 1px solid rgb(54, 54, 54);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 300px;
-      margin-right: 8px;
-   }
+
    .card-links {
       height: 300px;
       width: 100%;
@@ -248,6 +223,12 @@ h3 {
       align-items: center;
       justify-content: center;
       padding: 12px;
+   }
+}
+@media (min-width: 1280px) {
+   p {
+      color: #b3b3b2;
+      font-size: 16px;
    }
 }
 </style>

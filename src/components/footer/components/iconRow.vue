@@ -2,7 +2,6 @@
    <div class="flex flex-row gap-2 ml-3">
       <img class="icon" src="../assets/js.svg" alt="jsicon" />
       <img class="icon" src="../assets/node-js.svg" alt="nodejsicon" />
-      <img class="icon" src="../assets/logo-progress.svg" alt="jsicon" />
       <img class="icon" src="../assets/postgre.svg" alt="cssicon" />
       <img class="icon" src="../assets/physics.svg" alt="physicsicon" />
       <img class="icon" src="../assets/document.svg" alt="documenticon" />
